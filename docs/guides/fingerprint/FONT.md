@@ -91,7 +91,7 @@ BotBrowser addresses cross-platform font consistency through built-in font libra
 
 ### FontFace and Fallback Behavior
 
-BotBrowser 150 improves profile-backed font handling for `FontFace` local sources, request-by-name loading, and multilingual fallback. Windows-target profiles also keep their font renderer preferences with the active BrowserContext, including per-context sessions running on another host platform.
+Profile-backed font handling covers `FontFace` local sources, request-by-name loading, and multilingual fallback. Windows-target profiles keep their font renderer preferences with the active BrowserContext, including per-context sessions running on another host platform. Windows-profile text shaping on Linux hosts preserves profile font spacing and kerning in the final layout result.
 
 Keep `--bot-fonts=profile` when the profile font inventory and fallback policy should remain authoritative. Use `expand` only when the workflow intentionally allows host fallback beyond the profile bundle.
 

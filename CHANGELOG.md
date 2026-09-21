@@ -2,6 +2,18 @@
 
 > **Research scope:** Entries in this changelog describe features evaluated in authorized labs and defensive benchmarking programs. Follow the [Legal Disclaimer](DISCLAIMER.md) and [Responsible Use Guidelines](RESPONSIBLE_USE.md). We work with security vendors to investigate any misuse, so report concerns to [support@botbrowser.io](mailto:support@botbrowser.io).
 
+## [2026-09-20]
+### Major
+- **Chromium Core -> 153.0.8010.50**: Updated the BotBrowser 153 release line with upstream Web Platform, rendering, and security updates.
+- **Chromium Core -> 154.0.8037.44**: Updated the BotBrowser 154 release line with upstream Web Platform, rendering, and security updates.
+
+### Improvements
+- **WebKit-Family Runtime Consistency**: Improved profile-backed runtime, notification, accessibility preference, and browser-family behavior across supported WebKit-family workflows.
+- **WebKit-Family Worker Consistency**: Improved browser API behavior across Window and Worker contexts for supported WebKit-family profiles while preserving Chromium-family behavior.
+- **Cross-Platform Font Consistency**: Improved profile-backed Windows text shaping and spacing when Windows profiles run on Linux hosts.
+- **Browser-Family Service Isolation**: Improved profile-aware background service behavior across Chromium-family and WebKit-family sessions.
+- **Proxy IP Discovery Compatibility**: Improved public IP discovery across proxy-backed network configurations.
+
 ## [2026-09-18]
 ### Major
 - **Chromium Core -> 154.0.8037.17**: Started the BotBrowser 154 release line with upstream Web Platform, rendering, and security updates.
