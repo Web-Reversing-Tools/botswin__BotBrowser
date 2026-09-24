@@ -204,9 +204,9 @@ await Promise.all([
 
 ### Per-Context Proxy with Known IP
 
-Pass the proxy via context creation options, and set `--proxy-ip` via CDP to skip IP lookups. The value can be IPv4, IPv6, or a comma-separated pair containing one address from each family. Use `ipv4_none` or `ipv6_none` to declare an unavailable family and suppress its lookup.
+Pass the proxy and an explicit `--proxy-ip` together when creating the context so the address-family declaration is available before geographic resolution starts. The value can be IPv4, IPv6, or a comma-separated pair containing one address from each family. Use `ipv4_none` or `ipv6_none` to declare an unavailable family and suppress its lookup.
 
-> **Note**: Puppeteer uses `proxyServer`, Playwright uses `proxy: { server }`. See [examples/](examples/) for framework-specific syntax. `--proxy-ip` only updates the exit IP for geo-detection. When calling `setBrowserContextFlags` with only `--proxy-ip` (no `--proxy-server`), the proxy routing set via `createBrowserContext({ proxyServer })` is preserved.
+> **Note**: Puppeteer uses `proxyServer`, Playwright uses `proxy: { server }`. See [examples/](examples/) for framework-specific syntax. `--proxy-ip` only updates the exit IP for geo-detection. When calling `setBrowserContextFlags` with only `--proxy-ip` (no `--proxy-server`), the proxy routing set via `createBrowserContext({ proxyServer })` is preserved, but creation-time pairing is required when you need to avoid an early geographic lookup.
 
 ```javascript
 // Puppeteer example
@@ -214,27 +214,23 @@ const client = await browser.target().createCDPSession();
 
 // Context 1: US proxy with known IP
 const ctx1 = await browser.createBrowserContext({
-  proxyServer: 'socks5://user:pass@us-proxy.example.com:1080'
+  proxyServer: 'socks5://user:pass@us-proxy.example.com:1080',
+  botbrowserFlags: ['--proxy-ip=203.0.113.1']
 });
 await client.send('BotBrowser.setBrowserContextFlags', {
   browserContextId: ctx1._contextId,
-  botbrowserFlags: [
-    '--bot-profile=/path/to/profile.enc',
-    '--proxy-ip=203.0.113.1'
-  ]
+  botbrowserFlags: ['--bot-profile=/path/to/profile.enc']
 });
 const page1 = await ctx1.newPage();
 
 // Context 2: UK proxy with known IP
 const ctx2 = await browser.createBrowserContext({
-  proxyServer: 'socks5://user:pass@uk-proxy.example.com:1080'
+  proxyServer: 'socks5://user:pass@uk-proxy.example.com:1080',
+  botbrowserFlags: ['--proxy-ip=198.51.100.1']
 });
 await client.send('BotBrowser.setBrowserContextFlags', {
   browserContextId: ctx2._contextId,
-  botbrowserFlags: [
-    '--bot-profile=/path/to/profile.enc',
-    '--proxy-ip=198.51.100.1'
-  ]
+  botbrowserFlags: ['--bot-profile=/path/to/profile.enc']
 });
 const page2 = await ctx2.newPage();
 

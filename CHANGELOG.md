@@ -2,6 +2,12 @@
 
 > **Research scope:** Entries in this changelog describe features evaluated in authorized labs and defensive benchmarking programs. Follow the [Legal Disclaimer](DISCLAIMER.md) and [Responsible Use Guidelines](RESPONSIBLE_USE.md). We work with security vendors to investigate any misuse, so report concerns to [support@botbrowser.io](mailto:support@botbrowser.io).
 
+## [2026-09-23]
+### Improvements
+- **WebKit-Family Browser Consistency**: Improved profile-backed browser API, runtime, worker, media, font, CSS, and permission consistency across supported WebKit-family workflows.
+- **Cross-Platform Profile Consistency**: Improved profile-driven identity behavior across supported host platforms and browser contexts.
+- **Per-Context Geographic Identity Lifecycle**: Improved proxy, address-family, and geographic identity consistency when context-specific network settings are applied.
+
 ## [2026-09-20]
 ### Major
 - **Chromium Core -> 153.0.8010.50**: Updated the BotBrowser 153 release line with upstream Web Platform, rendering, and security updates.

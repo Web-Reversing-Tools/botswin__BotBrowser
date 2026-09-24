@@ -102,6 +102,8 @@ This is more resource-efficient than launching separate browser instances for ea
 
 Each context with a different proxy gets independent geo detection. BotBrowser detects the exit IP for each context's proxy and configures timezone, locale, and language accordingly:
 
+When a context has its own proxy route and an explicit `--proxy-ip`, provide both during context creation. Applying `--proxy-ip` only after creation can allow geographic resolution to begin before the address-family declaration is available.
+
 ```javascript
 // Context A: Netherlands proxy
 const ctxA = await browser.createBrowserContext({
