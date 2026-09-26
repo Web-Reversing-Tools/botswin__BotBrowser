@@ -2,6 +2,17 @@
 
 > **Research scope:** Entries in this changelog describe features evaluated in authorized labs and defensive benchmarking programs. Follow the [Legal Disclaimer](DISCLAIMER.md) and [Responsible Use Guidelines](RESPONSIBLE_USE.md). We work with security vendors to investigate any misuse, so report concerns to [support@botbrowser.io](mailto:support@botbrowser.io).
 
+## [2026-09-26]
+### Major
+- **Chromium Core -> 153.0.8010.53**: Updated the BotBrowser 153 release line with the latest validated minor-release maintenance changes.
+- **Chromium Core -> 154.0.8037.57**: Updated the BotBrowser 154 release line with the latest validated minor-release maintenance changes.
+
+### Improvements
+- **Runtime Numeric Consistency**: Improved profile-backed consistency for optimized numeric conversions and observable floating-point behavior across supported release lines.
+- **BrowserContext Platform Consistency**: Improved editing, text selection, and related input behavior so per-context target platforms remain aligned across supported workflows.
+- **WebKit-Family Platform Consistency**: Improved browser-family handling for platform feature availability, document behavior, and media-related surfaces.
+- **Cross-Platform Rendering Stability**: Improved profile-backed canvas, graphics, and rendering behavior across supported host platforms.
+
 ## [2026-09-23]
 ### Improvements
 - **WebKit-Family Browser Consistency**: Improved profile-backed browser API, runtime, worker, media, font, CSS, and permission consistency across supported WebKit-family workflows.
