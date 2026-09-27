@@ -2,6 +2,10 @@
 
 > **Research scope:** Entries in this changelog describe features evaluated in authorized labs and defensive benchmarking programs. Follow the [Legal Disclaimer](DISCLAIMER.md) and [Responsible Use Guidelines](RESPONSIBLE_USE.md). We work with security vendors to investigate any misuse, so report concerns to [support@botbrowser.io](mailto:support@botbrowser.io).
 
+## [2026-09-27]
+### Major
+- **Chromium Core -> 155.0.8059.5**: Started the BotBrowser 155 release line with upstream Web Platform, rendering, and security updates.
+
 ## [2026-09-26]
 ### Major
 - **Chromium Core -> 153.0.8010.53**: Updated the BotBrowser 153 release line with the latest validated minor-release maintenance changes.
