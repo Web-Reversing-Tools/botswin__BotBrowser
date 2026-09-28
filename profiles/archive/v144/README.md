@@ -2,7 +2,7 @@
 
 Please download BotBrowser **144.0.7559.111** from [this release](https://github.com/botswin/BotBrowser/releases/tag/144.0.7559.111).
 
-> **Usage:** Run demo profiles via [CLI](../../../INSTALLATION.md#download--installation) or [Launcher](../../../launcher/). Automation framework integration (Puppeteer, Playwright) requires [premium profiles](../../README.md#premium-profiles).
+> **Usage:** Run demo profiles via [CLI](../../../INSTALLATION.md#download--installation) or [BotBrowser Control](https://github.com/botswin/BotBrowser-Control). Automation framework integration (Puppeteer, Playwright) requires [premium profiles](../../README.md#premium-profiles).
 
 ---
 

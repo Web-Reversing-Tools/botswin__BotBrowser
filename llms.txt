@@ -184,7 +184,7 @@ Tests live under [tests/tests/antibots](https://github.com/botswin/BotBrowser/tr
 
 ## Companion Projects
 
-- [BotBrowser Launcher](https://github.com/botswin/BotBrowser/tree/main/launcher): cross-platform GUI for one-click profile selection and multi-instance management.
+- [BotBrowser Control](https://github.com/botswin/BotBrowser-Control): cross-platform GUI for one-click profile selection and multi-instance management.
 - [docker/](https://github.com/botswin/BotBrowser/tree/main/docker): Dockerfile and compose configuration for headless deployments.
 - [docker/cloudflare-docker](https://github.com/botswin/BotBrowser/tree/main/docker/cloudflare-docker): Cloudflare validation Docker scenario.
 - [docker/virginaustralia_docker](https://github.com/botswin/BotBrowser/tree/main/docker/virginaustralia_docker): airline scenario sample.

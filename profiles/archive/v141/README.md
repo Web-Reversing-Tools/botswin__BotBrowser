@@ -2,7 +2,7 @@
 
 Please download the 141 kernel BotBrowser from [this release](https://github.com/botswin/BotBrowser/releases/tag/v141-20251020).
 
-> **Usage:** Run demo profiles via [CLI](../../../INSTALLATION.md#download--installation) or [Launcher](../../../launcher/). Automation framework integration (Puppeteer, Playwright) requires [premium profiles](../../README.md#premium-profiles).
+> **Usage:** Run demo profiles via [CLI](../../../INSTALLATION.md#download--installation) or [BotBrowser Control](https://github.com/botswin/BotBrowser-Control). Automation framework integration (Puppeteer, Playwright) requires [premium profiles](../../README.md#premium-profiles).
 
 ---
 

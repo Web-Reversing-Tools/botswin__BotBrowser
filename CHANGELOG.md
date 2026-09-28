@@ -65,7 +65,7 @@
 
 ### New
 - **Device Pixel Ratio Policy (`--bot-dpr`)**: Added profile-backed and host-backed display-scale policies, plus an experimental compatibility mode for selected layout needs.
-- **Unified CLI Names**: Profile override controls now use concise `--bot-*` names across the CLI reference, guides, launcher, and desktop control surface. Existing `--bot-config-*` commands remain supported for incremental migration.
+- **Unified CLI Names**: Profile override controls now use concise `--bot-*` names across the CLI reference, guides, and desktop control surface. Existing `--bot-config-*` commands remain supported for incremental migration.
 
 ### Improvements
 - **Per-Context Identity and Display Consistency**: Improved profile-backed browser identity, window, viewport, and display-scale consistency across desktop and mobile contexts.

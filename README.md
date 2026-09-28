@@ -84,7 +84,7 @@ All engineering focuses on privacy research, cross-platform tracking-resistance 
 - A matching profile package. BotBrowser 150 and newer profiles are available through subscription or support at [support@botbrowser.io](mailto:support@botbrowser.io) or [@botbrowser_support](https://t.me/botbrowser_support); legacy demo profiles remain available for earlier evaluation lines.
 
 **Step 2: Launch**
-- **GUI:** Use [BotBrowserLauncher](launcher/) for one-click profile selection and multi-instance management
+- **GUI:** Use [BotBrowser Control](https://github.com/botswin/BotBrowser-Control) for one-click profile selection and multi-instance management
 - **CLI** (use absolute paths):
   ```cmd
   chrome.exe --bot-profile="C:\absolute\path\to\profile.enc" --user-data-dir="%TEMP%\botprofile_%RANDOM%"

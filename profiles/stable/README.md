@@ -15,7 +15,7 @@ BotBrowser 150 and newer profiles are delivered through subscription or support 
 
 Use a profile package with the matching BotBrowser major version. For example, v151 profiles require a v151 BotBrowser binary, and v154 profiles require a v154 BotBrowser binary.
 
-> **Access:** BotBrowser 150 and newer profile packages are available through subscription or support at [support@botbrowser.io](mailto:support@botbrowser.io) or [@botbrowser_support](https://t.me/botbrowser_support). Legacy demo profiles can still be launched via [CLI](../../INSTALLATION.md#download--installation) or [Launcher](../../launcher/).
+> **Access:** BotBrowser 150 and newer profile packages are available through subscription or support at [support@botbrowser.io](mailto:support@botbrowser.io) or [@botbrowser_support](https://t.me/botbrowser_support). Legacy demo profiles can still be launched via [CLI](../../INSTALLATION.md#download--installation) or [BotBrowser Control](https://github.com/botswin/BotBrowser-Control).
 
 ---
 
